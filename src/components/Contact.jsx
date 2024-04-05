@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Hinge } from "react-awesome-reveal";
 
 const Contact = () => {
