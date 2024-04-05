@@ -1,57 +1,7 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 import { Hinge } from "react-awesome-reveal";
 
 const Contact = () => {
-  const form = useRef();
-  const [animation, setAnimation] = useState(false);
-  const [animation2, setAnimation2] = useState(false);
-  const [animation3, setAnimation3] = useState(false);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [textArea, setTextArea] = useState("");
-
-  const HandleInput = (e) => {
-    setAnimation(true);
-    setName(e.target.value);
-    setTimeout(function () {
-      setAnimation(false);
-    }, 400);
-  };
-
-  const HandleEmail = (e) => {
-    setAnimation2(true);
-    setEmail(e.target.value);
-    setTimeout(function () {
-      setAnimation2(false);
-    }, 400);
-  };
-
-  const HandleTextArea = (e) => {
-    setAnimation3(true);
-    setTextArea(e.target.value);
-    setTimeout(function () {
-      setAnimation3(false);
-    }, 400);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (
-      e.target.name.value !== "" &&
-      e.target.email.value !== "" &&
-      e.target.project.value !== ""
-    ) {
-      emailjs.sendForm(
-        "service_2glpfun",
-        "template_4xoqvvp",
-        form.current,
-        "Samb7xbDnjS7coTnz"
-      );
-      e.target.reset();
-    }
-  };
-
   return (
     <section id="contact" className="grid justify-items-center">
       <h2 className="text-zinc-800 text-3xl font-bold">Get in touch</h2>
