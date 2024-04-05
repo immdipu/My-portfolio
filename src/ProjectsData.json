@@ -1,20 +1,111 @@
 [
   {
+    "title": "MediaSharing",
+    "about": "A Web application where users can watch Youtube videos together in real time. ",
+    "features": [
+      "Create public, private rooms",
+      "Join room",
+      "Search YouTube Videos and play",
+      "Share your videos with others in real time or watch videos shared by others",
+      "Chat with other users in the room",
+      "Pause, Play, Seek video in sync with other users",
+      "Transfer room ownership",
+      "Change room settings",
+      "Kick users from room",
+      "Follow other users",
+      "View other users profile"
+    ],
+
+    "github": "https://github.com/immdipu/media-sharing-app",
+    "live": "https://mediasharing.vercel.app",
+    "tools": [
+      "Next js",
+      "TypeScript",
+      "Tailwind",
+      "YouTube API",
+      "Shadecn",
+      "ReactQuery",
+      "Framer Motion",
+      "Redux",
+      "Node js",
+      "Socket.io",
+      "MongoDB",
+      "Express"
+    ],
+    "image": "./images/mediasharing.png"
+  },
+
+  {
     "title": "Beatstreet",
-    "about": "Free music streaming site built using React and Node js",
+    "about": "A progressive web app (PWA) where users can search for songs, albums, artists, play songs.",
+    "features": [
+      "Search for songs, albums, artists",
+      "Play songs",
+      "Create playlist",
+      "Import playlist from spotify",
+      "Add songs to favorite",
+      "Download songs, albums and playlist"
+    ],
     "github": "https://github.com/immdipu/Beatstreet",
     "live": "https://beatstreet.netlify.app/",
-    "tools": ["React", "Node js", "Tailwind", "API"],
+    "tools": [
+      "React",
+      "Node js",
+      "Tailwind",
+      "API",
+      "MongoDB",
+      "Express",
+      "ReactQuery",
+      "Redux"
+    ],
     "image": "./images/beatstreet.png"
+  },
+  {
+    "title": "ShowMania",
+    "about": "A web application where users can search for movies, TV shows and actors. Users can view details about movies, TV shows and actors. Users can also watch trailers of movies and TV shows.",
+    "features": [
+      "Search movies, TV shows and actors",
+      "Watch movie, tv show & trailers",
+      "View cast and crew",
+      "View movie details",
+      "Add to watchlist",
+      "Chat with other people in global chat",
+      "Follow other users"
+    ],
+    "github": null,
+    "live": "https://www.showmania.xyz",
+    "tools": [
+      "TypeScript",
+      "Next js",
+      "Tailwind",
+      "API",
+      "Node js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "ReactQuery",
+      "Redux",
+      "Material UI"
+    ],
+    "image": "./images/showmania.png"
   },
   {
     "title": "Cinemaa",
     "about": "Stream latest Movies and TV shows. Search moives, TV shows and actors",
     "github": "https://github.com/immdipu/CINEMAA",
-    "live": "https://cinemaa.vercel.app",
-    "tools": ["Next js", "Tailwind", "Node js", "API"],
+    "features": [
+      "Search movies, TV shows and actors",
+      "Watch trailers",
+      "View cast and crew",
+      "View movie details",
+      "View TV show details",
+      "View actor details"
+    ],
+    "live": "https://yourcinemaa.netlify.app",
+    "tools": ["HTML", "CSS", "Vanilla JavaScript", "API"],
     "image": "./images/Cinemaa.jpg"
   },
+
   {
     "title": "Quiz",
     "about": "Play Quiz from different available category",
@@ -23,14 +114,7 @@
     "tools": ["HTML", "Tailwind", "React", "API"],
     "image": "./images/Quiz.jpg"
   },
-  {
-    "title": "Cocktail DB",
-    "about": "Search about various cocktails and their recipes",
-    "github": "https://github.com/immdipu/cocktails-react",
-    "live": "https://master--curious-heliotrope-7c93c4.netlify.app/",
-    "tools": ["HTML", "Tailwind", "React", "API"],
-    "image": "./images/Cocktail.jpg"
-  },
+
   {
     "title": "Password Generator",
     "about": "Weak, Medium and Strong password Generator",
@@ -39,40 +123,7 @@
     "tools": ["HTML", "Tailwind", "React"],
     "image": "./images/PasswordGenerator.jpg"
   },
-  {
-    "title": "Static Job Listing",
-    "about": "Filter job from the list of jobs based on filter tag",
-    "github": "https://github.com/immdipu/static-job-listings-usng-react",
-    "live": "https://63856a746260b021be36f1c9--coruscating-griffin-f26886.netlify.app/",
-    "tools": ["HTML", "Tailwind", "React"],
-    "image": "./images/StaticJoblistingSearch.jpg"
-  },
 
-  {
-    "title": "Income Tracker",
-    "about": "Tracker all expenses by making a list of expenses",
-    "github": "https://github.com/immdipu/income-tracker",
-    "live": "https://bright-biscotti-968687.netlify.app/",
-    "tools": ["HTML", "Tailwind", "React"],
-    "image": "./images/IncomeTracker.jpg"
-  },
-
-  {
-    "title": "Advice Generator",
-    "about": "Generate a new advice everytime the button is clicked",
-    "github": "https://github.com/immdipu/Advice-Generator",
-    "live": "https://chic-pavlova-2c1f68.netlify.app/",
-    "tools": ["HTML", "CSS", "Vanilla JavaScript", "API"],
-    "image": "./images/AdviceGenerator.jpg"
-  },
-  {
-    "title": "Ecommerce Product Main Page",
-    "about": "Add, remove item from cart, view product photos",
-    "github": "https://github.com/immdipu/ecommerce-product-main-page",
-    "live": "https://teal-chebakia-560259.netlify.app/",
-    "tools": ["HTML", "CSS", "Vanilla JavaScript"],
-    "image": "./images/EcommerceProductPage.jpg"
-  },
   {
     "title": "GitHub User Seach",
     "about": "Seach details about Github users. Dark and light theme included.",
@@ -80,21 +131,5 @@
     "live": "https://seachaboutgithubusers.netlify.app/",
     "tools": ["HTML", "CSS", "Vanilla JavaScript", "API"],
     "image": "./images/GitHubUserSearch.jpg"
-  },
-  {
-    "title": "Tip Calculator",
-    "about": "Bill splitter and Tip calulator",
-    "github": "https://github.com/immdipu/Tip-Calculator",
-    "live": "https://chipper-narwhal-b02b4f.netlify.app/",
-    "tools": ["HTML", "CSS", "Vanilla JavaScript"],
-    "image": "./images/StaticJoblistingSearch.jpg"
-  },
-  {
-    "title": "Form Validation",
-    "about": "Form validation that includes password, email, ",
-    "github": "https://github.com/immdipu/Form-validation",
-    "live": "https://majestic-lolly-9bcf97.netlify.app/",
-    "tools": ["HTML", "CSS", "Vanilla JavaScript"],
-    "image": "./images/FormValidation.jpg"
   }
 ]

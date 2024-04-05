@@ -1,8 +1,8 @@
 import React from "react";
 // import Cinemaa from "../assets/Cinemaa.jpg";
-const Project = ({ image, title, about, github, live, tools }) => {
+const Project = ({ image, title, about, github, live, tools, features }) => {
   return (
-    <div className=" bg-white shadow-md rounded-md h-full border border-zinc-300 ">
+    <div className=" bg-white h-fit  shadow-md rounded-md border group border-zinc-300 ">
       <img
         src={image}
         alt="cinemaa"
@@ -12,13 +12,39 @@ const Project = ({ image, title, about, github, live, tools }) => {
         <h2 className="text-zinc-800 font-bold text-2xl max-sm:text-lg">
           {title}
         </h2>
-        <p className="text-zinc-600 max-sm:text-sm">{about}</p>
+        <p className="text-zinc-600 text-sm">{about}</p>
+
+        <div className="h-auto max-h-0 overflow-hidden  group-hover:max-h-screen duration-300 transition-all">
+          <h3 className="text-neutral-900 font-medium">Features:</h3>
+          {
+            <ul className="list-disc list-inside text-zinc-500  font-light text-sm">
+              {features &&
+                features.map((feature, index) => {
+                  return (
+                    <li key={index} className="font-light text-sm my-1">
+                      {feature}
+                    </li>
+                  );
+                })}
+            </ul>
+          }
+        </div>
+
         <div className="flex justify-between max-xm:flex-col max-xm:gap-2">
-          <a href={github} target="_blank" rel="noreferrer ">
-            <button className="px-4 py-2  bg-zinc-700 hover:bg-zinc-800 text-zinc-100 rounded-lg tracking-wide">
-              GitHub
+          {github ? (
+            <a href={github} target="_blank" rel="noreferrer ">
+              <button className="px-4 py-2  bg-zinc-700 hover:bg-zinc-800 text-zinc-100 rounded-lg tracking-wide">
+                GitHub
+              </button>
+            </a>
+          ) : (
+            <button
+              disabled
+              className="px-4 py-2  opacity-30 bg-zinc-700  text-zinc-100 rounded-lg tracking-wide"
+            >
+              GitHub (Private)
             </button>
-          </a>
+          )}
           <a href={live} target="_blank" rel="noreferrer">
             <button className="px-5 py-2 bg-zinc-700 hover:bg-zinc-800 text-zinc-100 rounded-lg tracking-wide">
               Live

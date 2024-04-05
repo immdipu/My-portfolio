@@ -19,6 +19,7 @@ const Projects = ({ data }) => {
               github={item.github}
               live={item.live}
               tools={item.tools}
+              features={item.features}
             />
           );
         })}
